@@ -43,8 +43,8 @@ module.exports = {
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
-        name: ``,
-        short_name: ``,
+        name: `Portfolio`,
+        short_name: `Portfolio`,
         icon: `src/images/favicon-16x16.png`,
         start_url: `/`,
         background_color: `#0D0E0F`,
