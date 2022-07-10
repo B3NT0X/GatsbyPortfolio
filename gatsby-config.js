@@ -45,7 +45,7 @@ module.exports = {
       options: {
         name: `Portfolio`,
         short_name: `Portfolio`,
-        icon: `src/images/favicon-16x16.png`,
+        icon: `src/images/favicon.png`,
         start_url: `/`,
         background_color: `#0D0E0F`,
         theme_color: `#f9004d`,

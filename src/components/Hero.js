@@ -5,7 +5,6 @@ import Row from "react-bootstrap/Row"
 import Col from 'react-bootstrap/Col';
 import { StaticImage } from "gatsby-plugin-image"
 import {TiArrowRight} from "@react-icons/all-files/ti/TiArrowRight"
-// import ScrollReveal from "scrollreveal";
 
 function Hero() {
   const data = useStaticQuery(graphql`
@@ -20,9 +19,6 @@ function Hero() {
     }
   }
 `)
-  // ScrollReveal({reset: true}).reveal('.logo', {delay: 500});
-  // ScrollReveal({reset: true}).reveal('.heroImage', {distance: '50%', delay: 1000});
-  // ScrollReveal({reset: true}).reveal('.heroContent', {origin: "top", distance: '50%', delay: 1000});
 
   const {publicURL} = data.allFile.edges[0].node
 
@@ -162,19 +158,19 @@ function Hero() {
           </div>     
         </Col>
         <Col xs={12} md={6} lg={4} className="projectContainer">
-        <StaticImage src="../images/viewEscape2.jpg" className="projectImg" alt="Projekt3" />  
+        <StaticImage src="../images/viewEscape2.jpg" className="projectImg" alt="Projekt4" />  
         <div className="overlay">
           <a href="https://b3nt0x.github.io/Clear-View-Escapes/">Clear View Escape<span><TiArrowRight /></span></a>
           </div>     
         </Col>
         <Col xs={12} md={6} lg={4} className="projectContainer">
-        <StaticImage src="../images/pappzarapp.jpg" className="projectImg" alt="Projekt3" /> 
+        <StaticImage src="../images/pappzarapp.jpg" className="projectImg" alt="Projekt5" /> 
         <div className="overlay">
           <a href="https://pappzarapp.de/">Pappzarapp<span><TiArrowRight /></span></a>
         </div>      
         </Col>
         <Col xs={12} md={6} lg={4} className="projectContainer">
-        <StaticImage src="../images/kling-binder.jpg" className="projectImg" alt="Projekt3" /> 
+        <StaticImage src="../images/kling-binder.jpg" className="projectImg" alt="Projekt6" /> 
         <div className="overlay">
         <a href="https://www.kling-binder.de/">Sabine Kling-Binder Psychotherapie<span><TiArrowRight /></span></a>  
         </div>      
@@ -184,7 +180,7 @@ function Hero() {
     </Container>
    </div>
    <footer className="footer">
-      <StaticImage src="../images/PortraitBG.png" className="footerImage" alt="Projekt3" /> 
+      <StaticImage src="../images/PortraitBG.png" className="footerImage" alt="Projekt7" /> 
       <div className="footer-container">
       <p><strong>Write me</strong></p>
       <a href="mailto:bennet10schwarz@gmail.com">bennet10schwarz@gmail.com<span><TiArrowRight /></span></a>
