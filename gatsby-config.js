@@ -14,6 +14,7 @@ module.exports = {
     `gatsby-plugin-preload-fonts`,  
     `gatsby-transformer-sharp`,
     `gatsby-plugin-sitemap`,
+    
 
     {
       resolve: `gatsby-source-filesystem`,
@@ -39,5 +40,18 @@ module.exports = {
         display: 'swap'
       }
     },
+    {
+      resolve: `gatsby-plugin-manifest`,
+      options: {
+        name: ``,
+        short_name: ``,
+        icon: `src/images/favicon-16x16.png`,
+        start_url: `/`,
+        background_color: `#0D0E0F`,
+        theme_color: `#f9004d`,
+        display: `standalone`,
+      },
+    },
+    `gatsby-plugin-offline`,
   ],
 }

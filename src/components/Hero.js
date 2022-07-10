@@ -5,7 +5,7 @@ import Row from "react-bootstrap/Row"
 import Col from 'react-bootstrap/Col';
 import { StaticImage } from "gatsby-plugin-image"
 import {TiArrowRight} from "@react-icons/all-files/ti/TiArrowRight"
-// import ScrollReveal from "scrollreveal";
+import ScrollReveal from "scrollreveal";
 
 function Hero() {
   const data = useStaticQuery(graphql`
@@ -20,9 +20,9 @@ function Hero() {
     }
   }
 `)
-  // ScrollReveal().reveal('.logo', {delay: 500});
-  // ScrollReveal().reveal('.heroImage', {distance: '50%', delay: 1000});
-  // ScrollReveal().reveal('.heroContent', {origin: "top", distance: '50%', delay: 1000});
+  ScrollReveal({reset: true}).reveal('.logo', {delay: 500});
+  ScrollReveal({reset: true}).reveal('.heroImage', {distance: '50%', delay: 1000});
+  ScrollReveal({reset: true}).reveal('.heroContent', {origin: "top", distance: '50%', delay: 1000});
 
   const {publicURL} = data.allFile.edges[0].node
 
