@@ -9,7 +9,7 @@ export default function Home() {
 
   return(
     <>
-    <Seo title="Bennet Schwarz, Frontend Developer, Germany" description="Bennet Schwarz. Frontend Dev, Web Designer, UI/UX." />
+    <Seo title="Frontend Developer: Bennet Schwarz from Germany" description=" I am Frontend Developer and Web Designer" />
     <Hero />
     </>
   )

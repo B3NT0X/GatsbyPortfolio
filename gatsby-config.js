@@ -14,6 +14,7 @@ module.exports = {
     `gatsby-plugin-preload-fonts`,  
     `gatsby-transformer-sharp`,
     `gatsby-plugin-sitemap`,
+    'gatsby-plugin-robots-txt',
     
 
     {

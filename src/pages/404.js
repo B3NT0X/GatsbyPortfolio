@@ -2,9 +2,12 @@ import React from "react"
 import {Link} from "gatsby"
 import Container from "react-bootstrap/Container"
 import Row from "react-bootstrap/Row"
+import Seo from "../components/Seo"
 
 function Error() {
   return (
+    <>
+      <Seo title="404: Seite nicht gefunden" />
       <Container>
         <p className="logo">Bennet</p>
         <Row>
@@ -14,6 +17,7 @@ function Error() {
           </Link>
         </Row>
       </Container>
+    </>
   )
 }
 
