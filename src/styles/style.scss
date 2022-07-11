@@ -401,3 +401,18 @@ p, a, label, li {
     }
 }
 
+.loaderContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 100%;
+    height: 100vh;
+    background-color: #0D0E0F;
+
+    .loader {
+        font-family: "Montserrat";
+        color: #fff;
+        font-size: 4rem;
+    }
+}
+
