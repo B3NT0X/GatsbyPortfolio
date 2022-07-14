@@ -24,7 +24,7 @@ function Impressum() {
                 <p>Brielower Str. 53</p>
                 <p>14770 Brandenburg an der Havel</p>
                 <h2 id="m56">Kontaktmöglichkeiten</h2>
-                <p> E-Mail-Adresse:</p><a href="mailto:bennet10schwarz@gmail.com">bennet10schwarz@gmail.com</a><br /><br />
+                <p> E-Mail-Adresse:</p><a href="mailto:bennet@commun-it.net">bennet@commun-it.net</a><br /><br />
                 <p>Telefon:</p><a href="tel:+491748024662">+491748024662</a><br /><br />
                 <h2 id="m14">Einleitung</h2>
                 <p>Mit der folgenden Datenschutzerklärung möchten wir Sie darüber aufklären, welche Arten Ihrer personenbezogenen Daten (nachfolgend auch kurz als "Daten“ bezeichnet) wir zu welchen Zwecken und in welchem Umfang verarbeiten. Die Datenschutzerklärung gilt für alle von uns durchgeführten Verarbeitungen personenbezogener Daten, sowohl im Rahmen der Erbringung unserer Leistungen als auch insbesondere auf unseren Webseiten, in mobilen Applikationen sowie innerhalb externer Onlinepräsenzen, wie z.B. unserer Social-Media-Profile (nachfolgend zusammenfassend bezeichnet als "Onlineangebot“).</p>
