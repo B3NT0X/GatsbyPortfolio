@@ -5,6 +5,10 @@ import Row from "react-bootstrap/Row"
 import Col from "react-bootstrap/Col";
 import { StaticImage } from "gatsby-plugin-image"
 import { TiArrowRight } from "@react-icons/all-files/ti/TiArrowRight"
+import {FaLinkedin} from "@react-icons/all-files/fa/FaLinkedin"
+import {FaXingSquare} from "@react-icons/all-files/fa/FaXingSquare"
+import {FaGithubSquare} from "@react-icons/all-files/fa/FaGithubSquare"
+import {HiOutlineMail} from "@react-icons/all-files/hi/HiOutlineMail"
 import { motion } from "framer-motion"
 
 function Hero() {
@@ -19,14 +23,13 @@ function Hero() {
   }, [])
 
   useEffect(() => {
-    let timer = setTimeout(() => {
+    setTimeout(() => {
       if(number >= 3) {
         setNumber(3);
       } else {
         setNumber(number + 0.1);
       }
     }, 100)
-     return () => clearTimeout(timer)
   }, [number])
 
 
@@ -57,14 +60,15 @@ function Hero() {
     },
   }
 
-  const loadingScreen = {
-    hidden: {
-      opacity: 0, 
-      y: -40
+  const loadingScreenBlock = {
+    hidden: { 
+      y: 0
     },
     visible: {
-      opacity: 1, 
-      y: 0, 
+      y: -80,
+      transition: {
+        duration: .5, 
+      }
     },
   }
 
@@ -127,7 +131,8 @@ function Hero() {
     <>
     { loading ? 
     <motion.div initial="hidden" animate="visible" variants={containerLoadingScreen} className="loaderContainer">
-      <motion.p initial="hidden" animate="visible" variants={loadingScreen} className="loader">Portfolio</motion.p>
+      <motion.div initial="hidden" animate="visible" variants={loadingScreenBlock} className="revealBlock"></motion.div>
+      <motion.p className="loader">Portfolio</motion.p>
     </motion.div> 
      :
      <div> 
@@ -153,7 +158,9 @@ function Hero() {
           <div className="links">
           <p className="mb-0">Links</p> 
           <div className="line"></div> 
-          <a href="https://github.com/B3NT0X?tab=repositories" rel="noopener noreferrer" target="_blank" className="lebenslauf">Github</a>
+          <a href="https://www.linkedin.com/in/bennet-schwarz-16901b245/" rel="noopener noreferrer" target="_blank" aria-label="linkedIn Profil"><FaLinkedin className="social-media-icon" /></a>
+          <a href="https://www.xing.com/profile/Bennet_Schwarz" rel="noopener noreferrer" target="_blank" aria-label="Xing Profil"><FaXingSquare className="social-media-icon" /></a>
+          <a href="https://github.com/B3NT0X?tab=repositories" rel="noopener noreferrer" target="_blank" aria-label="Github Profil"><FaGithubSquare className="social-media-icon" /></a>
           <div className="line short"></div>
           <a className="lebenslauf" href={publicURL} download>Get CV</a>
           </div>
@@ -174,7 +181,7 @@ function Hero() {
       <Row>
         <Col xs={12} lg={6} className="welcomeContainer order-lg-1"> 
           <h2>Welcome</h2>
-          <p className="welcomeText">I'm developer and I love building and designing digital experiences. Currently, I'm focused on building a recipe app with NextJs and NodeJs.</p>
+          <p className="welcomeText">I'm developer and I love building and designing digital experiences. Currently, I'm focused on building a recipe app with NextJs and Typescript.</p>
         </Col>
         <Col xs={12} lg={6} className="skillsContainer">
         <h2>Skills</h2>
@@ -291,7 +298,7 @@ function Hero() {
       <StaticImage src="../images/PortraitBG.png" className="footerImage" alt="Projekt7" /> 
       <div className="footer-container">
       <p><strong>Write me</strong></p>
-      <a href="mailto:bennet10schwarz@gmail.com">bennet10schwarz@gmail.com<span><TiArrowRight /></span></a>
+      <a href="mailto:bennet@commun-it.net">bennet@commun-it.net<span><HiOutlineMail /></span></a>
       </div>
       <div className="imprint">
         <Link to="/impressum">Impressum + Datenschutz</Link>

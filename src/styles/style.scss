@@ -352,8 +352,12 @@ p, a, label, li {
     }
 
     a {
-        color: #fff;
+        border-radius: 0.5rem;
+        padding: 10px;
         transition: .2s;
+        color: #fff;
+        background: $base-color;
+       
 
         &:hover {
             color: #fff;
@@ -361,11 +365,7 @@ p, a, label, li {
     }
 
     span {
-        padding: .5rem;
         margin-left: 1rem;
-        border-radius: .5rem;
-        background-color: $base-color;
-
         svg {
             font-size: 2.8rem;
         }
@@ -416,3 +416,18 @@ p, a, label, li {
     }
 }
 
+.revealBlock {
+    position: absolute;
+    width: 300px;
+    height: 100px;
+    background-color: #0D0E0F;
+}
+
+.social-media-icon {
+    font-size: 3rem;
+    fill: #C8C8C8;
+
+    &:hover {
+        fill: #fff;
+    }
+}
