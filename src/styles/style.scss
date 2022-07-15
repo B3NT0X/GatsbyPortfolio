@@ -247,8 +247,11 @@ p, a, label, li {
 
 .welcomeText {
     color: #C8C8C8;
-    margin-bottom: 8rem;
     max-width: 45rem;
+
+    &.margin-bottom {
+        margin-bottom: 8rem;
+    }
 }
 
 .welcomeContainer {

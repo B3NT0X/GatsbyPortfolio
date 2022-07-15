@@ -182,7 +182,7 @@ function Hero() {
         <Col xs={12} lg={6} className="welcomeContainer order-lg-1"> 
           <h2>Welcome</h2>
           <p className="welcomeText">My name is Bennet Schwarz. I'm passionate Frontend Web Developer and I love building and designing digital experiences using various technologies. Currently, I'm focused on building a recipe app with NextJs and Typescript.</p>
-          <p>I will love to hear from you. Whether it's a project, job opportunity, or just a chat. Feel free to contact me.</p>
+          <p className="welcomeText margin-bottom">I will love to hear from you. Whether it's a project, job opportunity, or just a chat. Feel free to contact me.</p>
         </Col>
         <Col xs={12} lg={6} className="skillsContainer">
         <h2>Skills</h2>
