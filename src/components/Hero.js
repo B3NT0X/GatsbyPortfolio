@@ -142,7 +142,7 @@ function Hero() {
       <Row>
         <Col xs={12} lg={6} className="heroContent">
         <motion.div initial="hidden" animate="visible" variants={container}>
-          <h1><span>Hey &#128075;<br />I'm Bennet Schwarz</span><br />I am Frontend Developer</h1>
+          <h1><span>Hey &#128075;<br />I'm Bennet Schwarz</span><br />I am a Frontend Developer</h1>
         <Link to="#body" className="heroBtn"><strong>Portfolio</strong> <TiArrowRight /></Link>
         <motion.div variants={headline} className="heroData">
         <div className="heroDataContainer">
